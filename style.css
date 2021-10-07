@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100vh;
+}
+body{
+    background-color: #151E33;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    place-content: center;
+}
+a{
+    color: #F089A0;
+    text-decoration: none;
+}
+/* Cerate */
+.create{
+    background-color: #1C2843;
+    max-width: 785px;
+    width: 785px;
+    min-width: 320px;
+    border-radius: 15px;
+    padding: 2.5rem 3rem 3.5rem 3rem;
+}
+
+
+/* Login */
+.login{
+    text-align: right;
+    font-size: 1rem;
+}
+
+
+/* Content */
+.content{
+    margin: 3rem 0;
+}
+.content__title{
+    text-align: center;
+    font-size: 1.62rem;
+    font-weight: bold;
+}
+.content__desc{
+    text-align: center;
+    font-weight: lighter;
+    max-width: 360px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.62rem;
+}
+
+
+/* Form */
+.form{
+    max-width: 384px;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form__control{
+    margin-bottom: 1.5rem;
+}
+.form__label{
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.62rem;
+    margin-bottom: 0.5rem;
+}
+.form__input{
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.12rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #495e8d;
+    border-radius: 0.31rem;
+    font-weight: normal;
+}
+.form__input:not([type="submit"]):focus{
+    border: 1px solid transparent;
+    outline: 2px solid #0756ff;
+}
+.form__submit{
+    border: none;
+    background-color: #E3627F;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Legal */
+.legal{
+    max-width: 583px;
+    padding: 2rem 4rem;
+    margin: 0 auto;
+    background-color: #202E4E;
+    font-weight: lighter;
+    font-size: 0.87rem;
+    color: #8f9ab2;
+    text-align: center;
+    border-radius: 0.62rem;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 830px) {
+    .create{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 485px) {
+    .create{
+        border-radius: 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+}
